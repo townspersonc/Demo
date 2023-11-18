@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-public class Menu : MonoReferenceable
+public class Menu : Singleton<Menu>
 {
     [SerializeField] private List<Window> _windows;
     [SerializeField] private Window _startupWindow;
@@ -11,7 +11,7 @@ public class Menu : MonoReferenceable
     public event Action<Window> OnWindowOpen;
     public event Action<Window> OnWindowClose;
 
-    private void Awake()
+    private void Start()
     {
         CloseAll();
         if (_startupWindow != null) Open(_startupWindow);

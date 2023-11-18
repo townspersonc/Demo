@@ -2,7 +2,7 @@
 {
     protected override void OnButtonClick()
     {
-        var wind = _menu.GetWindow<T>();
+        var wind = Menu.Instance.GetWindow<T>();
 
         if (wind != null)
         {
@@ -12,7 +12,7 @@
             }
             else if(wind.CanClose)
             {
-                _menu.Close(wind);
+                Menu.Instance.Close(wind);
             }
         }
     }
