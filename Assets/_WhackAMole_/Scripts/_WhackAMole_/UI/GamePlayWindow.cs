@@ -11,7 +11,7 @@ namespace WhackAMole
         [SerializeField] private CanvasGroup _group;
         [SerializeField] private PropertyLabel_Int _missedMolesLabel, _remainingMolesLabel, _playerLivesLabel;
 
-        public override int OpenMiliSeconds => (int)FadeDuration * 1000;
+        public override int OpenMiliSeconds => (int)(FadeDuration * 1000f);
         public override int CloseMiliSeconds => OpenMiliSeconds;
 
         private void OnEnable()

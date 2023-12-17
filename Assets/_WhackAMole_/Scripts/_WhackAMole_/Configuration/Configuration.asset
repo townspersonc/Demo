@@ -73,7 +73,7 @@ MonoBehaviour:
     AppearScale: 1
     AppearDuration: 0.35
     HideScale: 0
-    HideDuration: 0.35
+    HideDuration: 0.25
     AppearEase: 27
     HideEase: 26
   _gamePlayWindowFadeDuration: 0.4

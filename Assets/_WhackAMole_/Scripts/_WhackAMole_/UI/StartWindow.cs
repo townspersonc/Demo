@@ -14,8 +14,8 @@ namespace WhackAMole
 
         [SerializeField] private List<OpenVariation> _openVariations;
 
-        public override int OpenMiliSeconds => (int)(Config.AppearDuration) * 1000;
-        public override int CloseMiliSeconds => (int)(Config.HideDuration) * 1000;
+        public override int OpenMiliSeconds => (int)(Config.AppearDuration * 1000f);
+        public override int CloseMiliSeconds => (int)(Config.HideDuration * 1000f);
 
         protected override void OnOpenStart(Payload_Base payload = null)
         {
