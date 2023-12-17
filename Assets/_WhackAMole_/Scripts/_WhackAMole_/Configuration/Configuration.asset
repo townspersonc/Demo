@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bccc665e531189f4c8571e40ed97f15f, type: 3}
+  m_Name: Configuration
+  m_EditorClassIdentifier: 
+  _generalConfiguration:
+    _playerLives: 3
+    _lifeToMissedMoleRatio: 10
+  _levelConfiguration:
+    Easy:
+      Level: 1
+      Time: 60
+      HoleCount: 3
+      TargetMoleHits: 5
+    Hard:
+      Level: 15
+      Time: 60
+      HoleCount: 10
+      TargetMoleHits: 20
+  _moleConfiguration:
+    VisibleY: 0.3
+    ShowDur: 0.45
+    HideDur: 0.15
+    PeekDuration: 0.35
+    ShowEase: 27
+    HideEase: 26
+    ShowInterval: {x: 0.5, y: 1.5}
+    HideInterval: {x: 2, y: 5}
+    PeakDelay: {x: 0.1, y: 0.5}
+  _holeConfiguration:
+    AppearScale: 1
+    AppearDuration: 0.3
+    HideScale: 0
+    HideDuration: 0.25
+    AppearEase: 27
+    HideEase: 26
+  _hammerConfiguration:
+    HitMoveInTime: 0.2
+    HitMoveInJumpPower: 1
+    HitRotInTime: 0.1
+    HitRotOutTime: 0.2
+    PreHitRotDelay: 0.15
+    HitMoveOutTime: 0.35
+    HitMoveInEase: 4
+    HitRotInEase: 18
+    HitRotOutEase: 6
+    HitMoveOutEase: 6
+    HitPosOffset: {x: 0.3, y: 0.3, z: -0.73}
+    HitRot: {x: 85, y: -25, z: 0}
+    AppearConf:
+      AppearScale: 1
+      AppearDuration: 0.35
+      HideScale: 0
+      HideDuration: 0.25
+      AppearEase: 27
+      HideEase: 26
+  _scaleTweenButtonConfiguration:
+    PressedScale: 0.85
+    PressedDuration: 0.2
+    ReleaseDuration: 0.25
+    PressedEase: 3
+    ReleaseEase: 27
+  _startWindowConfiguration:
+    AppearScale: 1
+    AppearDuration: 0.35
+    HideScale: 0
+    HideDuration: 0.35
+    AppearEase: 27
+    HideEase: 26
+  _gamePlayWindowFadeDuration: 0.4
